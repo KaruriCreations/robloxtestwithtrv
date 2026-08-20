@@ -10,8 +10,7 @@ local CURRENT_TOUCH = 0
 -- local isTouched = false
 -- local isCoolDown = false
 
-while CURRENT_TOUCH < MAX_TOUCH do
-    block.Touched:Connect(function(otherPart: BasePart)
+ block.Touched:Connect(function(otherPart: BasePart)
     print(otherPart.Name)
     -- local character = otherPart.Parent
     -- local player = Players:GetPlayerFromCharacter(character)    
@@ -22,8 +21,7 @@ while CURRENT_TOUCH < MAX_TOUCH do
     --     return
     -- end
     touchEvent:FireServer()
-end)
-end 
+end) 
 
  
 
